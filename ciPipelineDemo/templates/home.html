@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Continuos Integration Demo</title>
-    <!-- <script src="main.js"></script> -->
 </head>
 <body>
     
@@ -13,6 +14,9 @@
     
     <button id="btn">Precipitaciones</button>
 
-    <p id="response"></p>
+    <div id="response">
+        <p hidden>La probabilidad de precipitaciones es: </p>
+    </div>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
